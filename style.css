@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color:hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*  learned from DrMESAZIM */
+    padding-top: max(20px, calc((100vh - 625px) / 2)); 
+    padding-bottom: max(20px, calc((100vh - 625px) / 2));
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+}
+
+.img{
+    overflow: hidden;
+    width: inherit;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+img{
+    object-fit: fill;
+    width: inherit;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    height: 315px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.new{
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    margin-right: 20px;
+}
+
+.old{
+    text-decoration: line-through;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 0.5em;
+    padding: 1em;
+    border: 1px solid;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    background-color: hsl(158, 58%, 14%);
+}
+
+@media screen and (min-width: 640px) {
+  
+    body{
+        /*  learned from DrMESAZIM */
+        padding-top: max(20px, calc((100vh - 450px) / 2)); 
+        padding-bottom: max(20px, calc((100vh - 450px) / 2));
+    }
+    
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 640px;
+        height: 450px;
+    }
+    
+    .img{
+        height: inherit;
+        width: 320px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    article{
+        height: 390px;
+        width: 320px;
+        padding: 30px;
+        border-radius: 0px 10px 10px 0px;
+    }
+}
